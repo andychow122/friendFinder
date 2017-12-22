@@ -13,7 +13,8 @@ app.use(bodyParser.json());
 //=======================================================
 
 
-
+require("./routing/apiRoutes")(app);
+require("./routing/htmlRoutes")(app);
 
 
 
