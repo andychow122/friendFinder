@@ -8,18 +8,139 @@
   crossorigin="anonymous"></script>
 	<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Chosen -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 </head>
 <body>
 	<div class = "container">
 		<div class = "jumbotron">
 			<h3>Fill This Out To Find A Friend</h3>
-			<form>Name: <input type="text" name="name"></form>
-			<form>Photo (please provide URL): <input type="text" name="image"></form>
-			<ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
-			  ...
-			  <li role="separator" class="divider"></li>
-			  ...
-			</ul>
+			<hr>
+			<br>
+			<form>Name: <input type="text" name="name" class="form-control"></form>
+			<form>Photo (please provide URL): <input type="text" name="image" class="form-control"></form>
+			<hr>
+
+			<!-- questions -->
+			<h3><strong>Question 1</strong></h3>
+		    <h4>You enjoy watching movies.</h4>
+		    <select class="chosen-select" id="q1">
+		      <option value="1">1 (Strongly Disagree)</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5 (Strongly Agree)</option>
+		    </select>
+
+		    <h3><strong>Question 2</strong></h3>
+		    <h4>You like tacos.</h4>
+		    <select class="chosen-select" id="q2">
+		      <option value="1">1 (Strongly Disagree)</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5 (Strongly Agree)</option>
+		    </select>
+
+
+		    <h3><strong>Question 3</strong></h3>
+		    <h4>You like anime.</h4>
+		    <select class="chosen-select" id="q3">
+		      <option value="1">1 (Strongly Disagree)</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5 (Strongly Agree)</option>
+		    </select>
+
+
+		    <h3><strong>Question 4</strong></h3>
+		    <h4>You like going to concerts.</h4>
+		    <select class="chosen-select" id="q4">
+		      <option value="1">1 (Strongly Disagree)</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5 (Strongly Agree)</option>
+		    </select>
+
+
+		    <h3><strong>Question 5</strong></h3>
+		    <h4>You like tennis.</h4>
+		    <select class="chosen-select" id="q5">
+		      <option value="1">1 (Strongly Disagree)</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5 (Strongly Agree)</option>
+		    </select>
+
+
+		    <h3><strong>Question 6</strong></h3>
+		    <h4>You like breathing.</h4>
+		    <select class="chosen-select" id="q6">
+		      <option value="1">1 (Strongly Disagree)</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5 (Strongly Agree)</option>
+		    </select>
+
+
+		    <h3><strong>Question 7</strong></h3>
+		    <h4>You like water.</h4>
+		    <select class="chosen-select" id="q7">
+		      <option value="1">1 (Strongly Disagree)</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5 (Strongly Agree)</option>
+		    </select>
+
+		    <h3><strong>Question 8</strong></h3>
+		    <h4>You are willing to play D&D.</h4>
+		    <select class="chosen-select" id="q8">
+		      <option value="1">1 (Strongly Disagree)</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5 (Strongly Agree)</option>
+		    </select>
+
+		    <h3><strong>Question 9</strong></h3>
+		    <h4>You like headaches.</h4>
+		    <select class="chosen-select" id="q9">
+		      <option value="1">1 (Strongly Disagree)</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5 (Strongly Agree)</option>
+		    </select>
+
+		    <h3><strong>Question 10</strong></h3>
+		    <h4>On occasion, the rug beneath your feet can sometimes start something you have never seen before, no, never even heard of before, and that is the thing that will keep this night dark.</h4>
+		    <select class="chosen-select" id="q10">
+		      <option value="1">1 (Strongly Disagree)</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5 (Strongly Agree)</option>
+		    </select>
+
+		    <br>
+		    <br>
+
+		    <!-- Submit Button -->
+		    <button type="submit" class="btn btn-primary btn-sm btn-block" id="submit">
+		     Submit</button>
+
+		    <hr>
+		    <footer class="footer">
+		      <div class="container">
+		        <p><a href="/api/friends">API Friends List</a></p>
+		      </div>
+		    </footer>
 		</div>	
 	</div>
 </body>
